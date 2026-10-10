@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Sounds & notifications",
+    "description": "Plays short tones and sends desktop notifications for run completion, approval requests, questions, and errors. Choose both in Settings → General."
+  }
+}
