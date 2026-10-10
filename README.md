@@ -121,10 +121,10 @@ npm には公開していません（`private: true` のままです）。npm �
 
 ```bash
 node --check client.js     # 構文
-node test/smoke.mjs        # ブラウザを模したサンドボックスで21項目
+node test/smoke.mjs        # ブラウザを模したサンドボックスで23項目
 ```
 
-`test/smoke.mjs` は `client.js` を Node の `vm` 上でブラウザスタブに読み込み、行の登録、9イベントの購読、通知のゲート順（`off` → `kind-off` → `visible` → `permission`）、承認・質問の waterfall の素通しと回答時の自動クローズ、本文の切り詰め、`localStorage` の永続化、両行のレンダリングまでを検証します。同じテストが GitHub Actions でも走ります。
+`test/smoke.mjs` は `client.js` を Node の `vm` 上でブラウザスタブに読み込み、行の登録、8イベントの購読、通知のゲート順（`off` → `kind-off` → `visible` → `permission`）、承認・質問の waterfall の素通しと回答時の自動クローズ、本文の切り詰め、`localStorage` の永続化、両行のレンダリングまでを検証します。同じテストが GitHub Actions でも走ります。
 
 構成は4ファイルです。`index.js` が Host 側（このプラグインは Host に何も足しません）、`client.js` が UI・音・通知の全部、`cordis.patch.yml` が行の挿入、`package.json` が束の宣言です。
 

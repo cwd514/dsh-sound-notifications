@@ -1,5 +1,5 @@
-# DSH の各種挙動に効果音をつけるプラグイン。
-# Host 側は何もしない（client.js がブラウザで音を鳴らす）。
+# DSH の各種挙動に効果音とデスクトップ通知を付けるプラグイン。
+# Host 側は何もしない（client.js がブラウザで音を鳴らし、通知を出す）。
 - insert:
     - id: dsh-sound
       name: '@local/dsh-sound'

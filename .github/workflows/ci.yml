@@ -27,5 +27,5 @@ jobs:
           node --check index.js
           node --check client.js
 
-      - name: Sandbox smoke test (21 checks)
+      - name: Sandbox smoke test (23 checks)
         run: node test/smoke.mjs
